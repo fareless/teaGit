@@ -14,7 +14,19 @@ package com.shengzhiyi.tea;
 public class TeaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TeaApplication.class, args);
+//		SpringApplication app = new SpringApplication(TeaApplication.class);
+//
+//		app.addListeners(new SpringBootStartedEventListener());
+
+//		app.addListeners((ApplicationListener<ApplicationPreparedEvent>) event -> {
+//			System.out.println("application prepared event");
+//		});
+//
+//		app.addListeners((ApplicationListener<ApplicationReadyEvent>) event -> {
+//			System.out.println("application ready event");
+//		});
+
+		SpringApplication.run(TeaApplication.class,args);
 	}
 
 }

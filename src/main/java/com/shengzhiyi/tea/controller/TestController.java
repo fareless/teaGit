@@ -1,17 +1,16 @@
 package com.shengzhiyi.tea.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
 import java.util.ArrayList;
 import java.util.List;
 
 
-@RestController
+@Controller
 @RequestMapping("/tea")
-public class TeaController {
+public class TestController {
 
     @RequestMapping(value = "/getTeaList", method = RequestMethod.GET)
     @ResponseBody
@@ -23,4 +22,9 @@ public class TeaController {
         return list;
     }
 
+    @RequestMapping("/getview")
+    public String getView(){
+        return "test";
+    }
+    
 }
